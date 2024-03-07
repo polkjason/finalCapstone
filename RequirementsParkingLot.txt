@@ -1,0 +1,18 @@
+Requirements Parking Lot
+    *For features that may or may not be added. 0 = incomplete, 1 = complete
+Requirements Pending:
+1 Edit Task: Editting due date of task: User should not be able to set due date to be before the assigned date.
+1 Edit Task: Reassigning username to a task: Assigned date gets current date, but this may cause the due date to be before the assigned date.
+            Changing the due date may be required upon changing username assignment of a task along with verification due date is not less than assigned date.
+1 Edit Task: Ensure that messages such as "Returning to {x} menu." are not being displayed more than once. Further decoupling needed.
+1 Edit Task: Decouple the task file update function from the individual edit task functions to prevent the repeated calls. This can be done at a higher level
+            after the functions have done their work.
+0 Add Task: Need to add condition to check to ensure due date is not less than assigned date.
+1 generating reports write to text file.
+1 display statistics also generates and displays to the reports to the screen (not read from the files).
+1 Decouple writing to file parts from the creating reports functions so the code for making and formatting the reports can be used for "generating reports" and "display statistics"
+0 Modify some menu items to only be accessible by admin and not by regular user, such as assigning tasks to other users (Not required by assignment)
+0 Application needs to be refactored to OOP
+0 Apply my Hash Tree algorithm to passwords and to file contents to ensure file contents are unmodified externally (my Hash Tree algorithm works, but stil needs refinements to improve its security)
+0 Unit testing and integration testing is a must for a project this big. Automated end-to-end testing would be a nice addition as well.
+        NOTE: Creating a testing suite should be high priority due to the bugs introduced when adding the report generation functions, which led to discovery that Python does not like function overloading.
