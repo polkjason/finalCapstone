@@ -1,0 +1,20 @@
+Priority Fixes:
+    The folloing fixes need to be made. 0 = incomplete, 1 = complete
+
+Fixes:
+1 Edit Task: Marking tasks complete/ incomplete causing duplicate entries to be put in tasks.txt.
+            UPDATE: No longer occurs. The error was caused by putting the task into the task_list. Since task is a
+                    referenced data structure, the copy isn't necessary.
+1 View My Tasks (vm): Displaying tasks was showing True and False instead of Yes and No.
+                    UPDATE: This has been to changed to display the correct output.
+1 Removed overloaded function count_user_tasks that takes no arguments, leaving the one that requires a user to inputted. Code updated to accomodate this change.
+                    NOTE: Apparently, Python does not permit function overload.
+1 Task ids are not being assigned to tasks correctly leading to tasks receiving nonunique ids.
+                    UPDATE: Fixed by using count_task function to count all tasks instead of count_user_tasks function, which only counts the tasks assigned to a user.
+1 Fixed a bug that prevented due date and reassigning users due to checking for yes/no instead of True/ False.
+1 Fixed a bug where user_data was not being updated unless the program was restarted. Had to pass user_data to the reg_user function to correct it.
+1 Fixed a bug that caused the program to crash when generating user reports with a divide by zero exception by adding a check to see if a user actually has
+  tasks assigned to them before attempting to divide by the number of tasks they have, which would be zero in this case.
+1 adding users and tasks not updating to reports and stats without restarting program first.
+1 va feature does not display completed and overdue status of tasks. UPDATE: va feature now displays these statuses for each user and
+  the overdue status is now stored in file as yes for overdue and no for not overdue.                     
