@@ -1,21 +1,21 @@
 # finalCapstone
 
-##Table of Contents
+## Table of Contents
 
-##Description and Purpose of the Project
+## Description and Purpose of the Project
 This repository is a duplicate of the Task_Manager repository, and is being used for my HyperionDev Bootcamp assignment to show the final capstone project using the name requested
 in the assignment. It also features pull requests to resolve two issues.
 
-##Installation
+## Installation
 This project requires the python runtime executable. Compile and run the project on whatever IDE you prefer.
 
-##Usage
+## Usage
 When the project starts, you will be prompted for login credentials. To log in as an administrator, use username: admin and password: password. You then be presented with a menu displaying the main menu based on user priviliges-- in the case of the screenshots, admin.
 
 
 ![image](https://github.com/polkjason/finalCapstone/assets/61259810/81cbea79-4c7a-4f44-8851-39c256a4522e)
 
-###Main Menu
+### Main Menu
 r: Select this option to create a new user
 
 ![image](https://github.com/polkjason/finalCapstone/assets/61259810/440fe38e-b10b-499a-8482-6669151b53ad)
@@ -37,16 +37,16 @@ e: exits the program.
 
 ![image](https://github.com/polkjason/finalCapstone/assets/61259810/bd4511e2-f7e3-4a8f-8b77-2fd102b319e9)
 
-####Admin only Main Menu Options:
+#### Admin only Main Menu Options:
 gr: Select this option to generate reports for all tasks and write them to two files.
 
-#####task_overview.txt
+##### task_overview.txt
 This file holds the total tasks, total completed, total incompleted, and total overdue. Further, it has percentage incompleted and it has percentage of tasks overdue.
 
-#####user_overview.txt
+##### user_overview.txt
 This file holds details for each user's specific tasks. It also has the total completed, incompleted, and overdue as well as the percentages for each.
 
 ds: Select this to generate the same statistics that gr creates, but instead of outputting the information to a file, it is displayed to the terminal window.
 
-##Credits
+## Credits
 Author: Jason Polk (https://github.com/polkjason)
